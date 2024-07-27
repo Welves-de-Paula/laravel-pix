@@ -32,8 +32,9 @@ class Pix
         $this->format($data);
 
         $hash = (new QRCode)->render($this->mount());
+        return $hash;
 
-        return '<img src="' . $hash . '" alt="QR Code" style="width:' . $size . 'px;height:' . $size . 'px;"/>';
+        // return '<img src="' . $hash . '" alt="QR Code" style="width:' . $size . 'px;height:' . $size . 'px;"/>';
     }
 
     public function payload($data)

@@ -1,5 +1,5 @@
 {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "welves/laravel-pix",
     "type": "library",
     "description": "Pacote de geração de QR Code PIX para Laravel, sem integração com BACEN.",
