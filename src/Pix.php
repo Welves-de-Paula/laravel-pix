@@ -83,7 +83,9 @@ class Pix
             $this->px[62][05] = $identificador;
         }
 
-        $this->px[62][05] = "***";
+        if (!Arr::has($data, 'identificador')) {
+            $this->px[62][05] = "***";
+        }
     }
 
 
